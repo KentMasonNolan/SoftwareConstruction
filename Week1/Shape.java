@@ -10,6 +10,7 @@ public abstract class Shape {
     }
 
     public void printInfo() {
+        calculateArea();
         System.out.println(this.shapeName);
         System.out.println(this.area);
     }

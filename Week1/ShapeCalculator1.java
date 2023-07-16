@@ -10,6 +10,9 @@ public class ShapeCalculator1 {
         recObj.setHeight(16.5);
         recObj.setWidth(12);
 
+        cirObj.printInfo();
+        recObj.printInfo();
+
 
     }
 }
