@@ -1,5 +1,7 @@
 package Week1;
 
+import java.text.DecimalFormat;
+
 public abstract class Shape {
 
     public String shapeName = "";
@@ -12,7 +14,8 @@ public abstract class Shape {
     public void printInfo() {
         calculateArea();
         System.out.println(this.shapeName);
-        System.out.println(this.area);
+        DecimalFormat decimalFormat = new DecimalFormat("#.###");
+        System.out.println(decimalFormat.format(this.area));
     }
 
     public void setName(String newName) {
