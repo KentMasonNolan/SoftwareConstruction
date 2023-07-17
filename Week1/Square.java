@@ -15,6 +15,8 @@ public class Square extends Rectangle{
 
     public void setSide(double side) {
         this.side = side;
+        setHeight(side);
+        setWidth(side);
     }
 
 }

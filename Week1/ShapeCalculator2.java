@@ -15,8 +15,13 @@ public class ShapeCalculator2 {
             System.out.println("(1) Rectangle ");
             System.out.println("(2) Circle ");
             System.out.println("(3) Square ");
+            System.out.println("(4) Exit Program ");
 
-            int menu = input.nextInt();
+
+            try {
+                int menu = input.nextInt();
+
+
 
             switch (menu){
                 case 1:
@@ -36,9 +41,24 @@ public class ShapeCalculator2 {
                     cir1.printInfo();
                     break;
                 case 3:
+                    Square squ1 = new Square("Squ");
+                    System.out.println("Please input a side length ");
+                    System.out.println("Side ");
+                    squ1.setSide(input.nextDouble());
+                    squ1.printInfo();
+                    break;
+                case 4:
+                    System.out.println("Thank you, have a nice day.");
+                    System.exit(0);
+                default:
+                    System.out.println("Wrong input");
+                    System.exit(3);
 
             }
+            } catch (Exception e) {
+                System.out.println("Invalid input. Not an integer");
+                System.exit(3);
+            }
         }
-
     }
 }
