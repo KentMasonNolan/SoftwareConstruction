@@ -1,8 +1,12 @@
 package Week1;
 
-public class Circle extends Shape{
+public class Circle extends Shape {
 
     private double radius;
+
+    public Circle(String name) {
+        super("Circle");
+    }
 
     public double getRadius() {
         return radius;
@@ -10,10 +14,6 @@ public class Circle extends Shape{
 
     public void setRadius(double radius) {
         this.radius = radius;
-    }
-
-    public Circle(String name) {
-        super("Circle");
     }
 
     @Override

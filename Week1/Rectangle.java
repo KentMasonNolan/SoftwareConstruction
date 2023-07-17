@@ -1,9 +1,13 @@
 package Week1;
 
-public class Rectangle extends Shape{
+public class Rectangle extends Shape {
 
     private double width;
     private double height;
+
+    public Rectangle(String name) {
+        super("Rectangle");
+    }
 
     public double getWidth() {
         return width;
@@ -19,10 +23,6 @@ public class Rectangle extends Shape{
 
     public void setHeight(double height) {
         this.height = height;
-    }
-
-    public Rectangle(String name) {
-        super("Rectangle");
     }
 
     @Override

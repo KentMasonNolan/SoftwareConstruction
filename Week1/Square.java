@@ -1,10 +1,10 @@
 package Week1;
 
 
-
-public class Square extends Rectangle{
+public class Square extends Rectangle {
 
     private double side;
+
     public Square(String name) {
         super("Square");
     }
