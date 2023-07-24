@@ -16,11 +16,11 @@ public class DebugProgram {
         Dogs d2 = new Dogs(" doggy2", "black");
         Dogs d3 = new Dogs("doggy3 ", "white");
         Dogs d4 = new Dogs(" doggy4", "yellow");
-        Dogs d5 = new Dogs(null, "black and white");
+        Dogs d5 = new Dogs("doggy5", "black and white");
 
         Dogs[] dogArray = new Dogs[]{d1, d2, d3, d4, d5};
 
-        for (int i = 0; i <= dogArray.length; i++) {
+        for (int i = 0; i <= dogArray.length-1; i++) {
             String dogName = dogArray[i].getName();
             System.out.println(dogName.trim());
         }
