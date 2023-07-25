@@ -8,7 +8,7 @@ public class Task2_02 {
         String inputFileName = "T02_input.txt";
         String outputFileName = "T02_output.txt";
 
-        System.out.println("File Path: " + new File(inputFileName).getAbsolutePath());
+        System.out.println("File Path: " + new File(inputFileName).getAbsolutePath()); //this is testing I did with chatGPT to get the file opened as I was having issues.
 
 
         try {
