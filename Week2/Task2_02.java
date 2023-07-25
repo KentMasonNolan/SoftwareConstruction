@@ -1,16 +1,15 @@
 package Week2;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 
 public class Task2_02 {
 
     public static void main(String[] args) {
         String inputFileName = "T02_input.txt";
         String outputFileName = "T02_output.txt";
+
+        System.out.println("File Path: " + new File(inputFileName).getAbsolutePath());
+
 
         try {
             FileReader fileReader = new FileReader(inputFileName);
