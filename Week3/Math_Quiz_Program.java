@@ -60,6 +60,8 @@ public class Math_Quiz_Program {
 
                 String userInput = input.next();
                 if (userInput.equalsIgnoreCase("x")) {
+                    System.out.println("Your final score was: " + score);
+                    System.out.println("Have a nice day.");
                     userExit = true;
                     break;
                 }
