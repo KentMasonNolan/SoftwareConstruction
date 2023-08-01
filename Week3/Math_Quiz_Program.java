@@ -36,6 +36,8 @@ public class Math_Quiz_Program {
 
                 double answer = 0;
 
+
+
                 switch (operatorRandom) {
                     case 0:
                         answer = firstRandom - secondRandom;
